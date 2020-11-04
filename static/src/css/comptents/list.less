@@ -1,0 +1,298 @@
+.list-m(@bg,@border,@num){
+   .title {
+      width: 100%;
+      height: 22px;
+      margin-bottom: 21px;
+   }
+  .list {
+    background-color: @bg;
+    padding: 10px 18px 10px 18px;
+    .item{
+       &.active {
+         .main .detail {
+             display: block;
+         }
+         .single {
+            display: none;
+         }
+         .num {
+            .text {
+              border-radius: 50%;
+              display: block;
+              width: 24px;
+              height: 24px;
+              line-height: 24px;
+              text-align: center;
+              color:#fff;
+              font-family: "pingfang" !important;
+              font-weight: normal !important;
+              background: @num;
+              position: relative;
+              left: 6px;
+            }
+         }
+       }
+       &:nth-of-type(1) {
+         .num {
+           color:@num;
+           font-weight: bold;
+           font-family: 'AliHYAiHei';
+         }
+       }
+      &:nth-of-type(2) {
+        .num {
+          color:@num;
+          font-weight: bold;
+          font-family: 'AliHYAiHei';
+        }
+      }
+      &:nth-of-type(3) {
+        .num {
+          color:@num;
+          font-weight: bold;
+          font-family: 'AliHYAiHei';
+        }
+      }
+      &:last-of-type{
+        border:none;
+      }
+       border-bottom: 1px dashed @border;
+       display: block;
+       .num {
+          float: left;
+          width: 38px;
+          height: 40px;
+          padding-top: 19px;
+          text-align: center;
+          font-size: 16px;
+       }
+
+       .main{
+          float: left;
+          .single {
+             padding: 18px 0;
+             font-size: 16px;
+             .textOver()
+          }
+          .detail {
+             display: none;
+             padding: 18px 0;
+             .bookImg {
+                 float: left;
+                 width:70px;
+                 height: 94px;
+                 margin-right: 10px;
+                 .imgBox()
+                 }
+             .info {
+                 float: left;
+                 .name {
+                   font-size: 16px;
+                   margin-bottom: 10px;
+                   .textOver();
+                 }
+                 .author {
+                    font-size: 14px;
+                    color:@secFont;
+                 }
+             }
+          }
+       }
+    }
+  }
+}
+
+.list-min(){
+  .title {
+    width: 100%;
+    height: 19px;
+    margin-bottom: 14px;
+    position: relative;
+    .more {
+      position: absolute;
+      left: 356px;
+      top:3px;
+    }
+  }
+  .list {
+    padding: 0;
+    .item{
+      &.active {
+        .main .detail {
+          display: block;
+        }
+        .single {
+          display: none;
+        }
+      }
+      &:last-of-type{
+        border:none;
+      }
+      display: block;
+      .main{
+        float: left;
+        .single {
+          padding: 10px 0;
+          font-size: 14px;
+          .textOver()
+        }
+        .detail {
+          display: none;
+          padding: 10px 0;
+          .bookImg {
+            float: left;
+            width:80px;
+            height: 108px;
+            margin-right: 2px;
+            .imgBox()
+          }
+          .info {
+            float: left;
+            width: 286px;
+            margin-left: 15px;
+            .name {
+              font-size: 16px;
+              margin-bottom: 15px;
+              .textOver();
+            }
+            .author {
+              font-size: 14px;
+              color:@secFont;
+              margin-bottom: 5px;
+            }
+            .dec{
+              height: 40px;
+              line-height: 1.6;
+              overflow: hidden;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.list-nav{
+  .title {
+      height: 50px;
+      text-align: center;
+      color:#fff;
+      background: #ff9f2d;
+      line-height: 50px;
+      font-size: 16px;
+   }
+  .items {
+    background-color: #fef8ec;
+    padding: 10px 0;
+  }
+   .item{
+       height: 40px;
+       line-height: 40px;
+       font-size: 15px;
+       text-align: center;
+       padding: 0 24px;
+       position: relative;
+       cursor: pointer;
+       .text {
+         .textOver();
+       }
+       .item-nav {
+         width: 652px;
+         border: 1px solid #ff9f2d;
+         position: absolute;
+         left: 252px;
+         top: -1px;
+         padding: 10px 4px;
+         background-color: #fff;
+         display: none;
+         a {
+            float: left;
+            padding: 0 16px;
+            border-right: 1px #cccccc solid;
+            line-height: 20px;
+            height: 20px;
+            margin: 5px 0;
+            &:last-of-type{
+                border: none;
+            }
+           &:hover{
+             text-decoration: underline;
+             color:#ff9f2d;
+           }
+         }
+       }
+       &:hover{
+        background-color:#fbefd8;
+         .item-nav{
+           display: block;
+         }
+       }
+   }
+}
+
+.list-detail{
+    .title{
+      height: 21px;
+      margin-bottom: 28px;
+    }
+   .row{
+      .item {
+         .img {
+            float: left;
+            width: 120px;
+            height: 160px;
+            margin-bottom: 26px;
+            .imgBox();
+         }
+         .info{
+            float: left;
+            width: 180px;
+            padding-left: 15px;
+           .name {
+             font-size: 16px;
+             margin-bottom: 17px;
+             padding-top: 2px;
+           }
+           .author{
+             color:@secFont;
+             margin-bottom: 7px;
+             font-size: 14px;
+           }
+           .classify{
+             color:@secFont;
+             margin-bottom: 7px;
+             font-size: 14px;
+           }
+           .dec{
+             color:@secFont;
+             height: 60px;
+             overflow: hidden;
+             font-size: 14px;
+
+           }
+         }
+
+      }
+   }
+}
+
+
+
+
+
+
+.list-min{
+  .list-min()
+};
+
+.list-m.yellow {
+  .list-m(#fef8ec,#ffeac6,#ff9f2d)
+}
+.list-m.red {
+  .list-m(#fdf3ed,#fee4de,#ff6f42)
+}
+
+.list-m.blue {
+  .list-m(#effcfe,#d5ebf1,#1ec4d9)
+}

@@ -1,0 +1,103 @@
+@m-color:#57b854;
+.err{
+  color: red;
+}
+.dialogLogin {
+  padding-top: 40px;
+  .closeBt {
+    position: absolute;
+    right: 26px;
+    top: 21px;
+    color:@m-color;
+    cursor: pointer;
+  }
+  .title {
+     text-align: center;
+     color:@m-color;
+     padding-top: 10px;
+     font-size: 26px;
+     margin-bottom: 28px;
+     //font-family: "宋体";
+  }
+  .wrap{
+     width: 364px;
+     margin: 0 auto;
+  }
+  .prompt {
+     padding-bottom: 10px;
+  }
+  .input-item {
+    border:1px solid #d9d9d9;
+    border-radius: 4px;
+    height: 50px;
+    overflow: hidden;
+    margin-bottom: 22px;
+    .head{
+       float: left;
+       width: 48px;
+       height: 50px;
+       line-height: 50px;
+       text-align: center;
+       .iconfont{
+         font-size: 20px;
+         color:#767676
+       }
+     }
+     .input {
+      width: 310px;
+      height: 100%;
+      float: left;
+      border:none;
+      outline: none;
+      //font-size: 16px;
+    }
+  }
+  .agree {
+    margin-bottom: 50px;
+  }
+
+  .btns {
+    .btn {
+       width: 160px;
+       height: 49px;
+       border-radius: 6px;
+       text-align: center;
+       line-height: 49px;
+       border: 1px solid @m-color;
+       color:@m-color;
+       display: block;
+       font-size: 16px;
+       cursor: pointer;
+       &.btn-a{
+          background: @m-color;
+          color:#fff;
+       }
+    }
+  }
+}
+.agree input[type=checkbox] { display: none;}
+
+.agree input[type=checkbox] +label:before{
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height:  14px;
+  background:url('../img/login/checked.png') no-repeat;
+  background-size: contain;
+  margin-right: 10px;
+  position: relative;
+  top: 2px;
+}
+
+.agree input[type=checkbox]:checked +label:before{
+  background:url('../img/login/check.png') no-repeat;
+  background-size: contain;
+}
+
+.agree label {
+  -moz-user-select:none; /*火狐*/
+  -webkit-user-select:none; /*webkit浏览器*/
+  -ms-user-select:none; /*IE10*/
+  -khtml-user-select:none; /*早期浏览器*/
+  user-select:none;
+}

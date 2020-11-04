@@ -1,0 +1,87 @@
+// Clearfix
+//
+// For modern browsers
+// 1. The space content is one way to avoid an Opera bug when the
+//    contenteditable attribute is included anywhere else in the document.
+//    Otherwise it causes space to appear at the top and bottom of elements
+//    that are clearfixed.
+// 2. The use of `table` rather than `block` is only necessary if using
+//    `:before` to contain the top-margins of child elements.
+//
+// Source: http://nicolasgallagher.com/micro-clearfix-hack/
+
+.clearfix {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+.container { width: 1200px;margin: 0 auto;}
+.pull-left{float: left};
+.pull-right{float:right;};
+html{ width: 100%;min-height: 100%;position: relative}
+body {font-family: "pingfang"; color:@priFont;font-size: 14px;margin-bottom: 130px;}
+a { color: @priFont;}
+*{box-sizing: border-box;margin: 0;padding: 0;} a, a:hover{ text-decoration: none;}
+select::-ms-expand { display: none; }
+ul, li {list-style: none;}
+
+//底部
+.foot{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   padding-top: 30px;
+   text-align: center;
+   color: #fff;
+   background-color: #393632;
+   font-size: 16px;
+   height: 130px;
+   .link{
+     margin-bottom: 26px;
+     .space {
+       margin: 0 20px;
+       color:#57b854;
+     }
+     a {
+       color: #fff;
+     }
+   }
+   .copyright{
+      text-align: center;
+     .space {
+       color:#57b854;
+       margin: 0 24px;
+     }
+   }
+
+}
+
+//背景
+.logoBg { background: url("../img/bg/logobg.png") center no-repeat; background-size: contain;}
+.mdBg{ background: #faf9f2;}
+//layui
+body .layui-laydate .layui-this {
+  background-color: #57b854!important;
+  color: #fff!important;
+}
+body .dataTime {
+  height: 36px;
+  outline: none;
+  padding: 0 10px;
+  border:1px solid #e6e6e6;
+  border-radius: 3px;
+  background-image: url("../img/md/rili.png");
+  background-repeat: no-repeat;
+  background-position:108px 8px;
+  width: 140px;
+}
+body .layui-layer { border-radius: 8px;}
+
+
+

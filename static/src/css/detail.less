@@ -1,0 +1,233 @@
+@import "base/index";
+@import "comptents/top";
+@import "comptents/search";
+@import "comptents/logoSearch";
+@import "comptents/nav";
+@import "comptents/bread";
+@import "comptents/layout";
+@import "comptents/title";
+@import "comptents/list";
+
+.keep {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color:#ffaa45;
+  cursor: pointer;
+  .iconfont {
+    color:#ffaa45;
+  }
+}
+
+
+
+
+.detail-book {
+   .cover {
+      position: relative;
+      margin-bottom: 40px;
+     .img {
+        float: left;
+        width: 228px;
+        height: 300px;
+        .imgBox();
+     }
+     .info {
+        float: left;
+        width: 552px;
+        padding-left: 20px;
+        .space{
+           display: inline-block;
+           width: 330px;
+        }
+        .name {
+          font-size: 22px;
+          margin-bottom: 25px;
+
+        }
+        .author {
+          margin-bottom: 15px;
+          font-size: 16px;
+          color: @secFont;
+        }
+        .data{
+          margin-bottom: 15px;
+          font-size: 16px;
+          color: @secFont;
+        }
+        .pub {
+          margin-bottom: 15px;
+          font-size: 16px;
+          color: @secFont;
+        }
+        .classify {
+          margin-bottom: 30px;
+          font-size: 16px;
+          color: @secFont;
+        }
+     }
+   }
+   .dec {
+      margin-bottom: 40px;
+      .title{
+          height: 43px;
+          width: 100%;
+          margin-bottom: 12px;
+      }
+      .p {
+          text-indent: 2em;
+          line-height: 2;
+      }
+    }
+    .audio {
+         margin-bottom: 35px;
+        .title{
+          height: 43px;
+          width: 100%;
+        }
+       .list{
+         .item {
+             height: 60px;
+             line-height: 60px;
+             border-bottom: 1px dashed #e6e6e6;
+             padding-left: 40px;
+             cursor: pointer;
+             background: url("../img/bg/pay.png") no-repeat 15px 23px;
+             &.active{
+               background: url("../img/bg/pay-a.png") no-repeat 15px 20px;
+             }
+             .text{
+                 width: 750px;
+                .textOver();
+             }
+             .date{
+               float: right;
+             }
+         }
+       }
+    }
+}
+
+.mdqk6{
+  padding-top: 30px;
+  .item {
+    float: left;
+    width: 130px;
+    height: 367px;
+    margin: 0 35px;
+    .bookImg {
+      width: 100%;
+      height: 172px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-bottom: 22px;
+    }
+    .name {
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 10px;
+      .textOver();
+    }
+    .data {
+      text-align: center;
+      color:@secFont;
+    }
+  }
+}
+
+.mdqk5{
+  padding-top: 30px;
+  .item {
+    float: left;
+    width: 192px;
+    height: 238px;
+    margin: 0 24px;
+    .bookImg {
+      width: 100%;
+      height: 143px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-bottom: 22px;
+    }
+    .name {
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 10px;
+      .textOver();
+    }
+    .data {
+      text-align: center;
+      color:@secFont;
+    }
+  }
+}
+
+
+.video {
+  .videoPlay{
+      width: 840px;
+      height: 492px;
+      background: #000;
+      margin-bottom: 30px;
+  }
+  .title{
+     position: relative;
+     font-size: 22px;
+     color:#1a1a1a;
+     margin-bottom: 22px;
+     .control {
+       position: absolute;
+       right: 0;
+       top:2px;
+       font-size: 14px;
+       color:#ff9f2d;
+       label{
+         margin-left: 15px;
+         cursor: pointer;
+       }
+       .iconfont {
+         font-size: 17px;
+         color:#ff9f2d;
+       }
+     }
+  }
+  .title-2 {
+     margin-bottom: 20px;
+     font-size: 14px;
+     color:@secFont;
+  }
+  .dec {
+    color:@secFont;
+  }
+}
+
+
+.videoMore {
+  float: left;
+  width: 100%;
+  .title{
+    height: 53px;
+    width: 100%;
+
+  }
+}
+
+
+.payerTag {
+  .title{
+     width: 100%;
+     height: 22px;
+     margin-bottom: 26px;
+  }
+  overflow: hidden;
+  .tag{
+    float: left;
+    color: #ff9f2d;
+    background: #fef8ec;
+    padding:10px 14px;
+    border-radius: 6px;
+    margin-right: 10px;
+    margin-bottom: 8px;
+  }
+
+}

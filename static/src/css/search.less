@@ -1,0 +1,78 @@
+@import "base/index";
+@import "comptents/top";
+@import "comptents/search";
+@import "comptents/logoSearch";
+@import "comptents/nav";
+@import "comptents/bread";
+@import "comptents/title";
+@import "comptents/md";
+
+.search-r {
+   padding-bottom: 50px;
+   .prompt {
+      height: 40px;
+      line-height: 40px;
+      background-color: #fef8ec;
+      color:#ff9f2d;
+      padding: 0 18px;
+   }
+   .searchList {
+     &.video {
+         .item {
+           .info {
+             width: 945px;
+           }
+         }
+     }
+     .item {
+        padding: 35px 0 50px 30px;
+        display: block;
+        .imgBox{
+          float: left;
+          width: 126px;
+          height: 161px;
+          margin-right: 18px;
+          .imgBox();
+        }
+        .videoImgBox{
+          width: 202px;
+          height: 150px;
+          margin-right: 18px;
+          float: left;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+        .info {
+           float: left;
+           width: 1020px;
+          .name {
+             margin-bottom: 26px;
+             padding-top: 5px;
+          }
+          .author{
+            margin-bottom: 10px;
+          }
+          .pub{
+            margin-bottom: 10px;
+          }
+          .dec{
+            line-height: 1.8;
+            margin-bottom: 10px;
+            height: 50px;
+            overflow: hidden;
+          }
+          .issn {
+            margin-bottom: 10px;
+          }
+          .dec-audio{
+            line-height: 1.6;
+            margin-top: -6px;
+            margin-bottom: 6px;
+            height: 44px;
+            overflow: hidden;
+          }
+        }
+     }
+   }
+}
